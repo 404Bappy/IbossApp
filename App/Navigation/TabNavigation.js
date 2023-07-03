@@ -1,16 +1,13 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { SimpleLineIcons } from "@expo/vector-icons";
-
 import Home from "../Screen/Home";
 import Application from "../Screen/Application";
 import Culture from "../Screen/Culture";
 import PeerAppreciate from "../Screen/PeerAppreciate";
-
 export default function TabNavigation() {
   const Tab = createBottomTabNavigator();
   return (
