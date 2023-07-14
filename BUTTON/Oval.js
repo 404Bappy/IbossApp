@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#a0C580",
     borderTopLeftRadius: 200,
     borderTopRightRadius: 200,
-    overflow: "hidden", // To clip the oval shape
+    overflow: "hidden", 
   },
 });
 
