@@ -51,28 +51,39 @@ export default function ImpactFul() {
               }}
             >
               <TouchableOpacity style={styles.button}>
-                <View style={{ display: "flex", flexDirection: "row", gap: 4 }}>
+                <View
+                  style={{
+                    borderWidth: 1,
+                    borderColor: "red",
+                    height: 24,
+                    width: 20,
+                  }}
+                >
                   <View
-                    style={{
-                      width: 16,
-                      height: 16,
-                      marginTop: 3,
-                      display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
-                      borderRadius: 99,
-                      backgroundColor: "#EAAA08",
-                      gap: 4,
-                    }}
+                    style={{ display: "flex", flexDirection: "row", gap: 4 }}
                   >
-                    <MaterialCommunityIcons
-                      name="star-outline"
-                      size={16}
-                      color="white"
-                    />
-                  </View>
-                  <View>
-                    <Text style={styles.buttonText}>Send a Recognition </Text>
+                    <View
+                      style={{
+                        width: 16,
+                        height: 16,
+                        marginTop: 3,
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        borderRadius: 99,
+                        backgroundColor: "#EAAA08",
+                        gap: 4,
+                      }}
+                    >
+                      <MaterialCommunityIcons
+                        name="star-outline"
+                        size={16}
+                        color="white"
+                      />
+                    </View>
+                    <View>
+                      <Text style={styles.buttonText}>Send a Recognition </Text>
+                    </View>
                   </View>
                 </View>
               </TouchableOpacity>
