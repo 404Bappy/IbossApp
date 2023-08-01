@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+import EmployeeM from "./EmployeeM";
 
 export default function Header() {
   return (

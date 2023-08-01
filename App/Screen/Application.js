@@ -89,7 +89,7 @@ export default function Application() {
             >
               <MaterialIcons name="perm-contact-cal" size={20} color="white" />
             </View>
-            <Text> att. Adjust</Text>
+            <Text>Adjust</Text>
           </View>
           <View style={styles.container}>
             <View
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#D444F1",
   },
   firstLine: {
-      marginLeft:20,
+    marginLeft: 20,
     flexDirection: "row",
     justifyContent: "space-evenly",
   },
@@ -172,6 +172,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     marginTop: 20,
+    marginRight: 20,
   },
   container: {
     alignItems: "center",
