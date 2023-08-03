@@ -38,6 +38,9 @@ export default function PendingApplication() {
         <View style={styles.employee}>
           <View style={styles.imageContainer}>
             <Text>Leave</Text>
+            <Text>Application Date</Text>
+            <Text>Approver Date</Text>
+            <Text></Text>
           </View>
           <View style={styles.pending}>
             <View style={styles.Slayer}>
