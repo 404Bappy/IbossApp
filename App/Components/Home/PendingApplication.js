@@ -40,8 +40,8 @@ export default function PendingApplication() {
             <Text>Leave</Text>
           </View>
           <View style={styles.pending}>
-            <View style={styles.layer}>
-              <Text style={styles.Ptext}>4 Pending's</Text>
+            <View style={styles.Slayer}>
+              <Text style={styles.text}>Pending's</Text>
             </View>
           </View>
         </View>
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     marginLeft: 20,
     marginTop: 10,
+    gap: 250,
   },
   txtContainer: {
     marginLeft: 16,
@@ -135,5 +136,12 @@ const styles = StyleSheet.create({
     marginLeft: 0,
     marginTop: 13,
   },
-  Ptext: {},
+  Slayer: {
+    height: 20,
+    width: 50,
+    backgroundColor: "",
+    borderRadius: 99,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
