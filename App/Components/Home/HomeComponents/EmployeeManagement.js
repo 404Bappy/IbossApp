@@ -26,7 +26,7 @@ export default function EmployeeManagement() {
       <Text
         style={{
           fontWeight: "",
-          marginLeft: 10,
+          marginLeft: 20,
           marginTop: 2,
           color: "#667085",
         }}
