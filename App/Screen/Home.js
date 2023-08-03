@@ -1,11 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import Header from "../Components/Home/Header";
+import EmployeeManagement from "../Components/Home/HomeComponents/EmployeeManagement";
 
 export default function Home() {
   return (
-    <View>
-      <Header />
-    </View>
+    <ScrollView>
+      <View>
+        <Header />
+        <EmployeeManagement />
+      </View>
+    </ScrollView>
   );
 }
