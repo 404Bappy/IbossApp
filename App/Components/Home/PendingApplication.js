@@ -3,37 +3,34 @@ import React from "react";
 import RoundedButton from "../../../BUTTON/Button";
 import Divider from "../../../BUTTON/Devider";
 
-export default function ApplicationApprove() {
+export default function PendingApplication() {
   return (
     <View
       style={{
         marginTop: 20,
-        height: 300,
+        height: 360,
         width: 400,
         backgroundColor: "#fff",
       }}
     >
-      <Text
-        style={{
-          fontWeight: "500",
-          fontWeight: "bold",
-          marginLeft: 20,
-          marginTop: 20,
-        }}
-      >
-        Application Approvers
-      </Text>
-      <Text
-        style={{
-          fontWeight: "",
-          marginLeft: 20,
-          marginTop: 4,
-          color: "#667085",
-        }}
-      >
-        Your official applications, permissions and activity are approve by
-        managers
-      </Text>
+      <View style={styles.container}>
+        <Text
+          style={{
+            fontWeight: "500",
+            fontWeight: "bold",
+            marginLeft: 20,
+            marginTop: 20,
+          }}
+        >
+          Pending Applications
+        </Text>
+        <View style={styles.container}>
+          <View style={styles.layer}>
+            <Text style={styles.text}>4 Pendings</Text>
+          </View>
+        </View>
+      </View>
+
       <View style={styles.approversContainer}>
         <View style={styles.employee}>
           <View style={styles.imageContainer}>
@@ -110,5 +107,24 @@ const styles = StyleSheet.create({
   },
   txtContainer: {
     marginLeft: 16,
+  },
+  container: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 80,
+  },
+  layer: {
+    height: 32,
+    width: 111,
+    backgroundColor: "#D3D3D3",
+    borderRadius: 120,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 15,
+  },
+  text: {
+    fontSize: 16,
+    fontWeight: "",
+    color: "black",
   },
 });

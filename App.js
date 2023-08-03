@@ -1,5 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import TabNavigation from "./App/Navigation/TabNavigation";
 
 export default function App() {
