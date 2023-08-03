@@ -26,22 +26,23 @@ export default function PendingApplication() {
         </Text>
         <View style={styles.container}>
           <View style={styles.layer}>
-            <Text style={styles.text}>4 Pendings</Text>
+            <Text style={styles.text}>4 Pending's</Text>
           </View>
         </View>
+      </View>
+      <View>
+        <View style={styles.divider} />
       </View>
 
       <View style={styles.approversContainer}>
         <View style={styles.employee}>
           <View style={styles.imageContainer}>
-            <Image
-              style={styles.pic}
-              source={require("../../../assets/b.jpg")}
-            />
+            <Text>Leave</Text>
           </View>
-          <View style={styles.txtContainer}>
-            <Text style={{ fontWeight: "500" }}>Md. Mahadi Hasan Mridul </Text>
-            <Text style={{ color: "gray" }}>Line Manager</Text>
+          <View style={styles.pending}>
+            <View style={styles.layer}>
+              <Text style={styles.Ptext}>4 Pending's</Text>
+            </View>
           </View>
         </View>
         <View>
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "row",
-    gap: 80,
+    gap: 110,
   },
   layer: {
     height: 32,
@@ -123,8 +124,16 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   text: {
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: "",
     color: "black",
   },
+  divider: {
+    width: 400,
+    height: 1,
+    backgroundColor: "#EAECF0",
+    marginLeft: 0,
+    marginTop: 13,
+  },
+  Ptext: {},
 });
