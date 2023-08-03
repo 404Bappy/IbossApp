@@ -37,10 +37,28 @@ export default function PendingApplication() {
       <View style={styles.approversContainer}>
         <View style={styles.employee}>
           <View style={styles.imageContainer}>
-            <Text>Leave</Text>
-            <Text>Application Date</Text>
-            <Text>Approver Date</Text>
-            <Text></Text>
+            <View style={{ display: "flex" }}>
+              <Text style={{ fontWeight: "500", marginTop: 10 }}>Leave</Text>
+              <Text style={{ color: "#667085" }}>Application Date</Text>
+              <View style={{ display: "flex", flexDirection: "row" }}>
+                <Text style={{ color: "#667085", marginTop: 10 }}>
+                  Approver -
+                </Text>
+                <View style={styles.employee}>
+                  <View style={styles.imageContainer}>
+                    <Image
+                      style={styles.ApproverPic}
+                      source={require("../../../assets/s.jpg")}
+                    />
+                  </View>
+                  <View style={styles.txtContainer}>
+                    <Text style={{ fontWeight: "400" }}>
+                      Md. Abu Raihan Khan
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
           </View>
           <View style={styles.pending}>
             <View style={styles.Slayer}>
@@ -49,41 +67,7 @@ export default function PendingApplication() {
           </View>
         </View>
         <View>
-          <Divider />
-        </View>
-      </View>
-      <View style={styles.approversContainer}>
-        <View style={styles.employee}>
-          <View style={styles.imageContainer}>
-            <Image
-              style={styles.pic}
-              source={require("../../../assets/s.jpg")}
-            />
-          </View>
-          <View style={styles.txtContainer}>
-            <Text style={{ fontWeight: "500" }}>Md. Abu Raihan Khan </Text>
-            <Text style={{ color: "gray" }}>Dotted Supervisor</Text>
-          </View>
-        </View>
-        <View>
-          <Divider />
-        </View>
-      </View>
-      <View style={styles.approversContainer}>
-        <View style={styles.employee}>
-          <View style={styles.imageContainer}>
-            <Image
-              style={styles.pic}
-              source={require("../../../assets/k.jpg")}
-            />
-          </View>
-          <View style={styles.txtContainer}>
-            <Text style={{ fontWeight: "500" }}>Md. Jakaria Hossain </Text>
-            <Text style={{ color: "gray" }}>Supervisor</Text>
-          </View>
-        </View>
-        <View>
-          <Divider />
+          <View style={styles.divider} />
         </View>
       </View>
     </View>
@@ -108,7 +92,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     marginLeft: 20,
     marginTop: 10,
-    gap: 250,
+    position: "fixed",
   },
   txtContainer: {
     marginLeft: 16,
@@ -142,9 +126,17 @@ const styles = StyleSheet.create({
   Slayer: {
     height: 20,
     width: 50,
-    backgroundColor: "",
-    borderRadius: 99,
+    backgroundColor: "#EAECF0",
+    borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "yellow",
+    backgroundColor: "#D3D3D3",
+    marginLeft:50
+  },
+  ApproverPic: {
+    height: 18,
+    width: 18,
+    borderRadius: 99,
   },
 });
