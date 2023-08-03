@@ -8,7 +8,7 @@ export default function PendingApplication() {
     <View
       style={{
         marginTop: 20,
-        height: 360,
+        height: 490,
         width: 400,
         backgroundColor: "#fff",
       }}
@@ -38,8 +38,10 @@ export default function PendingApplication() {
         <View style={styles.employee}>
           <View style={styles.imageContainer}>
             <View style={{ display: "flex" }}>
-              <Text style={{ fontWeight: "500", marginTop: 10 }}>Leave</Text>
-              <Text style={{ color: "#667085" }}>Application Date</Text>
+              <Text style={{ fontWeight: "500", marginTop: 5 }}>Leave</Text>
+              <Text style={{ color: "#667085", marginTop: 10 }}>
+                Application Date
+              </Text>
               <View style={{ display: "flex", flexDirection: "row" }}>
                 <Text style={{ color: "#667085", marginTop: 10 }}>
                   Approver -
@@ -60,9 +62,123 @@ export default function PendingApplication() {
               </View>
             </View>
           </View>
-          <View style={styles.pending}>
+          <View>
             <View style={styles.Slayer}>
-              <Text style={styles.text}>Pending's</Text>
+              <Text style={{ color: "#A15C07" }}>Pending</Text>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View style={styles.divider} />
+        </View>
+      </View>
+      <View style={styles.approversContainer}>
+        <View style={styles.employee}>
+          <View style={styles.imageContainer}>
+            <View style={{ display: "flex" }}>
+              <Text style={{ fontWeight: "500", marginTop: 5 }}>Movement</Text>
+              <Text style={{ color: "#667085", marginTop: 10 }}>
+                Application Date
+              </Text>
+              <View style={{ display: "flex", flexDirection: "row" }}>
+                <Text style={{ color: "#667085", marginTop: 10 }}>
+                  Approver -
+                </Text>
+                <View style={styles.employee}>
+                  <View style={styles.imageContainer}>
+                    <Image
+                      style={styles.ApproverPic}
+                      source={require("../../../assets/s.jpg")}
+                    />
+                  </View>
+                  <View style={styles.txtContainer}>
+                    <Text style={{ fontWeight: "400" }}>
+                      Md. Abu Raihan Khan
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View>
+            <View style={styles.Slayer}>
+              <Text style={{ color: "#A15C07" }}>Pending</Text>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View style={styles.divider} />
+        </View>
+      </View>
+      <View style={styles.approversContainer}>
+        <View style={styles.employee}>
+          <View style={styles.imageContainer}>
+            <View style={{ display: "flex" }}>
+              <Text style={{ fontWeight: "500", marginTop: 5 }}>Movement</Text>
+              <Text style={{ color: "#667085", marginTop: 10 }}>
+                Application Date
+              </Text>
+              <View style={{ display: "flex", flexDirection: "row" }}>
+                <Text style={{ color: "#667085", marginTop: 10 }}>
+                  Approver -
+                </Text>
+                <View style={styles.employee}>
+                  <View style={styles.imageContainer}>
+                    <Image
+                      style={styles.ApproverPic}
+                      source={require("../../../assets/s.jpg")}
+                    />
+                  </View>
+                  <View style={styles.txtContainer}>
+                    <Text style={{ fontWeight: "400" }}>
+                      Md. Abu Raihan Khan
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View>
+            <View style={styles.Slayer}>
+              <Text style={{ color: "#A15C07" }}>Pending</Text>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View style={styles.divider} />
+        </View>
+      </View>
+      <View style={styles.approversContainer}>
+        <View style={styles.employee}>
+          <View style={styles.imageContainer}>
+            <View style={{ display: "flex" }}>
+              <Text style={{ fontWeight: "500", marginTop: 5 }}>Movement</Text>
+              <Text style={{ color: "#667085", marginTop: 10 }}>
+                Application Date
+              </Text>
+              <View style={{ display: "flex", flexDirection: "row" }}>
+                <Text style={{ color: "#667085", marginTop: 10 }}>
+                  Approver -
+                </Text>
+                <View style={styles.employee}>
+                  <View style={styles.imageContainer}>
+                    <Image
+                      style={styles.ApproverPic}
+                      source={require("../../../assets/s.jpg")}
+                    />
+                  </View>
+                  <View style={styles.txtContainer}>
+                    <Text style={{ fontWeight: "400" }}>
+                      Md. Abu Raihan Khan
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View>
+            <View style={styles.Slayer}>
+              <Text style={{ color: "#A15C07" }}>Pending</Text>
             </View>
           </View>
         </View>
@@ -89,7 +205,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-start",
-    marginBottom: 20,
+    marginBottom: 0,
     marginLeft: 20,
     marginTop: 10,
     position: "fixed",
@@ -126,13 +242,14 @@ const styles = StyleSheet.create({
   Slayer: {
     height: 20,
     width: 50,
-    backgroundColor: "#EAECF0",
     borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "yellow",
-    backgroundColor: "#D3D3D3",
-    marginLeft:50
+    backgroundColor: "#FEFBE8",
+    marginLeft: 50,
+    borderWidth: 1,
+
+    borderColor: "#EAAA08",
   },
   ApproverPic: {
     height: 18,
