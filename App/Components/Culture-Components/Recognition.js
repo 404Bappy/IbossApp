@@ -24,7 +24,18 @@ export default function Recognition() {
             <View style={styles.innerDiv}>
               <Card.Title
                 title="10200"
-                subtitle="Card Subtitle"
+                subtitle="My Recognition Point"
+                titleStyle={{
+                  fontSize: 20,
+                  fontWeight: 500,
+                  color: "#FFF",
+                  marginLeft: -20,
+                  marginTop: 7,
+                }}
+                subtitleStyle={{
+                  color: "#fff",
+                  marginLeft: -55,
+                }}
                 left={(props) => (
                   <Avatar.Icon
                     {...props}
@@ -65,7 +76,11 @@ const styles = StyleSheet.create({
   innerDiv: {
     height: 76,
     width: 355,
-    marginLeft: 20,
+
     borderRadius: 5,
+  },
+  outerDiv: {
+    width: 355,
+    marginLeft: 20,
   },
 });
