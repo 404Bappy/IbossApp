@@ -56,7 +56,7 @@ export default function ApplicationApprove() {
           <View style={styles.imageContainer}>
             <Image
               style={styles.pic}
-              source={require("../../../assets/s.jpg")}
+              source={require("../../../assets/b.jpg")}
             />
           </View>
           <View style={styles.txtContainer}>

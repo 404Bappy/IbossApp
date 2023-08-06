@@ -9,7 +9,8 @@ import { SimpleLineIcons } from "@expo/vector-icons";
 import Home from "../Screen/Home";
 import Application from "../Screen/Application";
 import Approval from "../Screen/Approval";
-import Features from "../Screen/Features";
+import Features from "../Screen/Culture";
+import Culture from "../Screen/Culture";
 
 export default function TabNavigation() {
   const Tab = createBottomTabNavigator();
@@ -55,9 +56,9 @@ export default function TabNavigation() {
       />
       <Tab.Screen
         name="Features"
-        component={Features}
+        component={Culture}
         options={{
-          tabBarLabel: "Features",
+          tabBarLabel: "Culture",
           tabBarIcon: ({ color, size }) => (
             <SimpleLineIcons name="options" color={color} size={size} />
           ),

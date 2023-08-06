@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <View>
       <View style={styles.header}>
-        <Text style={styles.headerText}>HR Core</Text>
+        <Text style={styles.headerText}>Culture</Text>
         <View style={styles.iconsContainer}>
           <Ionicons
             name="ios-notifications"
