@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import { Avatar, Card, IconButton } from "react-native-paper";
 import React from "react";
-i;
 import Header from "../Home/Header";
 import LinearGradient from "react-native-linear-gradient";
 
@@ -9,12 +8,13 @@ export default function Recognition() {
   return (
     <View>
       <Header />
+
       <View>
         <LinearGradient
           colors={["#085121", "#22984B"]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
-          style={styles.container}
+          style={styles.gradientContainer}
         >
           <View style={styles.innerDiv}>
             <Card.Title
@@ -51,6 +51,10 @@ export default function Recognition() {
 }
 
 const styles = StyleSheet.create({
+  gradientContainer: {
+    borderRadius: 4,
+    overflow: "hidden",
+  },
   innerDiv: {
     height: 76,
     width: 355,
