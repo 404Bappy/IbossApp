@@ -33,7 +33,7 @@ export default function ShareableComponent() {
                 <MaterialCommunityIcons
                   name="star-outline"
                   size={24}
-                  color="black"
+                  color="gray"
                 />
               </View>
             </View>
@@ -61,6 +61,7 @@ export default function ShareableComponent() {
                 alignItems: "center",
                 borderRadius: 99,
                 backgroundColor: "#FEFBE8",
+                marginTop: -2,
               }}
             >
               <View
