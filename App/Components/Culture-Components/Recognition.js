@@ -53,7 +53,7 @@ export default function Recognition() {
                     style={{}}
                     {...props}
                     icon="trophy"
-                    iconStyle={{ color: "white" }}
+                    iconStyle={{ color: "#fff" }}
                     size={45}
                     onPress={() => {}}
                   />
