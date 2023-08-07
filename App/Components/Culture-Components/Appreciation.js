@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 
 import React from "react";
 
-export default function Appreciation() {
+export default function Acknowledgement() {
   return (
     <View>
       <View
@@ -38,7 +38,7 @@ export default function Appreciation() {
           </View>
           <View style={{ display: "flex", flexDirection: "row", gap: -120 }}>
             <View style={styles.txtContainer}>
-              <Text style={{ fontWeight: "500" }}>Appreciation </Text>
+              <Text style={{ fontWeight: "500" }}>My Acknowledgement </Text>
               <Text
                 style={{
                   marginTop: 5,
