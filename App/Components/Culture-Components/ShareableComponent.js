@@ -38,11 +38,17 @@ export default function ShareableComponent() {
               </View>
             </View>
           </View>
-          <View style={{ display: "flex", flexDirection: "row", gap: -54 }}>
+          <View style={{ display: "flex", flexDirection: "row", gap: -120 }}>
             <View style={styles.txtContainer}>
               <Text style={{ fontWeight: "500" }}>Shareable Points </Text>
               <Text
-                style={{ marginTop: 5, fontWeight: "400", color: "#667085" }}
+                style={{
+                  marginTop: 5,
+                  fontWeight: "400",
+                  color: "#667085",
+                  width: 233,
+                  height: 16,
+                }}
               >
                 Expire in 29 days (sep, 30, 2022 )
               </Text>
@@ -201,7 +207,7 @@ const styles = StyleSheet.create({
   Icon: {
     height: 24,
     width: 24,
-    marginLeft: 60,
+    marginLeft: 100,
     marginTop: 30,
     position: "fixed",
   },
