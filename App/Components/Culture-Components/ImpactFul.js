@@ -16,15 +16,14 @@ export default function ImpactFul() {
           marginTop: 10,
         }}
       >
-        <View>
-          <View
-            style={{
-              width: 525,
-              height: 525,
-              borderRadius: 525,
-              backgroundColor: "#ECFDF3",
-            }}
-          ></View>
+        <View
+          style={{
+            width: 525,
+            height: 525,
+            borderRadius: 525,
+          }}
+        >
+          <View style={{ height: 525 }}></View>
         </View>
 
         <View style={styles.employee}>
@@ -36,7 +35,7 @@ export default function ImpactFul() {
                 justifyContent: "center",
                 alignItems: "center",
                 borderRadius: 99,
-                backgroundColor: "#F2F4F7",
+                backgroundColor: "#",
               }}
             >
               <View>
