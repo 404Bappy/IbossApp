@@ -5,7 +5,7 @@ import Recognition from "../Components/Culture-Components/Recognition";
 import ShareableComponent from "../Components/Culture-Components/ShareableComponent";
 import Acknowledgement from "../Components/Culture-Components/Acknowledgement";
 import Appreciation from "../Components/Culture-Components/Appreciation";
-import Impact from "../Components/Culture-Components/Impact";
+import ImpactFul from "../Components/Culture-Components/ImpactFul";
 
 export default function Culture() {
   return (
@@ -14,7 +14,7 @@ export default function Culture() {
       <ShareableComponent />
       <Acknowledgement />
       <Appreciation />
-      <Impact />
+      <ImpactFul />
     </View>
   );
 }

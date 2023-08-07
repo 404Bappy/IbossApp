@@ -6,19 +6,32 @@ import { FontAwesome5 } from "@expo/vector-icons";
 
 import React from "react";
 
-export default function Acknowledgement() {
+export default function ImpactFul() {
   return (
     <View>
       <View
         style={{
           backgroundColor: "#fff",
-          height: 80,
+          height: 227,
           width: 460,
           marginTop: 10,
           display: "flex",
           flexDirection: "row",
         }}
       >
+        <View
+          style={{
+            width: 525,
+            height: 525,
+            backgroundColor: "#ECFDF3",
+            borderRadius: 525,
+            flexShrink: 0,
+            
+          }}
+        >
+          <Text></Text>
+        </View>
+
         <View style={styles.employee}>
           <View style={styles.ic}>
             <View
