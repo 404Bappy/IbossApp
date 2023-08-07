@@ -38,10 +38,14 @@ export default function ShareableComponent() {
               </View>
             </View>
           </View>
-          <View>
+          <View style={{ display: "flex", flexDirection: "row", gap: -54 }}>
             <View style={styles.txtContainer}>
               <Text style={{ fontWeight: "500" }}>Shareable Points </Text>
-              <Text>Expire in 29 days (sep, 30, 2022 )</Text>
+              <Text
+                style={{ marginTop: 5, fontWeight: "400", color: "#667085" }}
+              >
+                Expire in 29 days (sep, 30, 2022 )
+              </Text>
             </View>
             <View
               style={{
@@ -53,11 +57,19 @@ export default function ShareableComponent() {
                 backgroundColor: "#FEFBE8",
               }}
             >
-              <View style={{ display: "flex", flexDirection: "row", gap: 5 }}>
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: 4,
+                  padding: 1,
+                }}
+              >
                 <View
                   style={{
                     width: 16,
                     height: 16,
+                    marginTop: 4,
 
                     alignItems: "center",
                     borderRadius: 99,
@@ -70,8 +82,8 @@ export default function ShareableComponent() {
                     color="white"
                   />
                 </View>
-                <View style={{ marginBottom: 9 }}>
-                  <Text>700</Text>
+                <View style={{ marginBottom: 4 }}>
+                  <Text style={{ marginTop: 1 }}>700</Text>
                 </View>
               </View>
             </View>
@@ -90,8 +102,6 @@ export default function ShareableComponent() {
               height: 80,
               width: 460,
               marginTop: 10,
-              display: "flex",
-              flexDirection: "row",
             }}
           >
             <View style={styles.employee}>
