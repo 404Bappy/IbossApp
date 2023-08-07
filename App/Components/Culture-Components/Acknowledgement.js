@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 import React from "react";
 
-export default function ShareableComponent() {
+export default function Acknowledgement() {
   return (
     <View>
       <View
@@ -30,17 +31,13 @@ export default function ShareableComponent() {
               }}
             >
               <View>
-                <MaterialCommunityIcons
-                  name="star-outline"
-                  size={24}
-                  color="gray"
-                />
+                <Ionicons name="trophy-outline" size={24} color="gray" />
               </View>
             </View>
           </View>
           <View style={{ display: "flex", flexDirection: "row", gap: -120 }}>
             <View style={styles.txtContainer}>
-              <Text style={{ fontWeight: "500" }}>Shareable Points </Text>
+              <Text style={{ fontWeight: "500" }}>My Acknowledgement </Text>
               <Text
                 style={{
                   marginTop: 5,
@@ -50,49 +47,8 @@ export default function ShareableComponent() {
                   height: 16,
                 }}
               >
-                Expire in 29 days (sep, 30, 2022 )
+                Gratitude: Recognitions & Points
               </Text>
-            </View>
-            <View
-              style={{
-                width: 50,
-                height: 24,
-                justifyContent: "center",
-                alignItems: "center",
-                borderRadius: 99,
-                backgroundColor: "#FEFBE8",
-                marginTop: -2,
-              }}
-            >
-              <View
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  gap: 4,
-                  padding: 1,
-                }}
-              >
-                <View
-                  style={{
-                    width: 16,
-                    height: 16,
-                    marginTop: 4,
-
-                    alignItems: "center",
-                    borderRadius: 99,
-                    backgroundColor: "#EAAA08",
-                  }}
-                >
-                  <MaterialCommunityIcons
-                    name="star-outline"
-                    size={16}
-                    color="white"
-                  />
-                </View>
-                <View style={{ marginBottom: 4 }}>
-                  <Text style={{ marginTop: 1 }}>700</Text>
-                </View>
-              </View>
             </View>
           </View>
         </View>
@@ -132,7 +88,7 @@ const styles = StyleSheet.create({
   Icon: {
     height: 24,
     width: 24,
-    marginLeft: 100,
+    marginLeft: 30,
     marginTop: 30,
     position: "fixed",
   },

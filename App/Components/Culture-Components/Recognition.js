@@ -43,7 +43,7 @@ export default function Recognition() {
                     icon="star"
                     style={{
                       backgroundColor: "#fff",
-                      color: "#085121",
+
                       marginBottom: 18,
                     }}
                   />
