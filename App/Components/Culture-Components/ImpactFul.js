@@ -12,24 +12,19 @@ export default function ImpactFul() {
       <View
         style={{
           backgroundColor: "#fff",
-          height: 227,
-          width: 460,
+
           marginTop: 10,
-          display: "flex",
-          flexDirection: "row",
         }}
       >
-        <View
-          style={{
-            width: 525,
-            height: 525,
-            backgroundColor: "#ECFDF3",
-            borderRadius: 525,
-            flexShrink: 0,
-            
-          }}
-        >
-          <Text></Text>
+        <View>
+          <View
+            style={{
+              width: 525,
+              height: 525,
+              borderRadius: 525,
+              backgroundColor: "#ECFDF3",
+            }}
+          ></View>
         </View>
 
         <View style={styles.employee}>
@@ -118,4 +113,5 @@ const styles = StyleSheet.create({
   text: {
     color: "white",
   },
+  oval: {},
 });
