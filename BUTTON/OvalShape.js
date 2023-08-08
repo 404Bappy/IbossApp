@@ -7,8 +7,8 @@ const OvalShape = () => {
       style={{
         height: 100,
 
-        borderBottomEndRadius: 525,
-        borderBottomStartRadius: 525,
+        borderBottomLeftRadius: 1000,
+        borderBottomRightRadius: 1000,
         backgroundColor: "#ECFDF3", // You can change the color as per your preference
       }}
     >
