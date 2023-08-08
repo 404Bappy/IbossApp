@@ -1,11 +1,10 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import React from "react";
-import Oval from "../../../BUTTON/Oval";
 import OvalShape from "../../../BUTTON/OvalShape";
 
 export default function ImpactFul() {
@@ -45,7 +44,38 @@ export default function ImpactFul() {
             </View>
           </View>
 
-          <View style={{ alignItems: "center" }}></View>
+          <View
+            style={{
+              alignItems: "center",
+            }}
+          >
+            <TouchableOpacity style={styles.button}>
+              <View style={{ display: "flex", flexDirection: "row", gap: 4 }}>
+                <View
+                  style={{
+                    width: 16,
+                    height: 16,
+                    marginTop: 3,
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    borderRadius: 99,
+                    backgroundColor: "#EAAA08",
+                    gap: 4,
+                  }}
+                >
+                  <MaterialCommunityIcons
+                    name="star-outline"
+                    size={16}
+                    color="white"
+                  />
+                </View>
+                <View>
+                  <Text style={styles.buttonText}>Send a Recognition </Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>
@@ -73,5 +103,18 @@ const styles = StyleSheet.create({
     marginLeft: 30,
     marginTop: 30,
     position: "fixed",
+  },
+  button: {
+    borderRadius: 100,
+    backgroundColor: "white",
+    paddingVertical: 10,
+    paddingHorizontal: 29,
+    alignItems: "center",
+    justifyContent: "center",
+    elevation: 2,
+    borderWidth: 1,
+    borderColor: "#299647",
+    marginTop: 8,
+    marginLeft: 11,
   },
 });

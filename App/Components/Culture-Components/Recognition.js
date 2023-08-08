@@ -1,8 +1,9 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, style, StyleSheet, Image } from "react-native";
 import { Avatar, Card, IconButton } from "react-native-paper";
 import React from "react";
 import Header from "../Home/Header";
 import { LinearGradient } from "expo-linear-gradient";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Recognition() {
   return (
@@ -50,12 +51,12 @@ export default function Recognition() {
                 )}
                 right={(props) => (
                   <IconButton
-                    style={{}}
                     {...props}
                     icon="trophy"
-                    iconStyle={{ color: "#fff" }}
+                    style={{
+                      color: "#fff",
+                    }}
                     size={45}
-                    onPress={() => {}}
                   />
                 )}
               />
