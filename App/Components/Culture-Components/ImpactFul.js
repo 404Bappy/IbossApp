@@ -5,6 +5,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import React from "react";
+import Oval from "../../../BUTTON/Oval";
+import OvalShape from "../../../BUTTON/OvalShape";
 
 export default function ImpactFul() {
   return (
@@ -12,18 +14,18 @@ export default function ImpactFul() {
       <View
         style={{
           backgroundColor: "#fff",
-
           marginTop: 10,
         }}
       >
-        <View
-          style={{
-            width: 525,
-            height: 525,
-            borderRadius: 525,
-          }}
-        >
-          <View style={{ height: 525 }}></View>
+        <View>
+          <View
+            style={{
+              
+              height: 225,
+            }}
+          >
+            <OvalShape/>
+          </View>
         </View>
 
         <View style={styles.employee}>
