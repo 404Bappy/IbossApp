@@ -43,38 +43,40 @@ export default function ImpactFul() {
               </Text>
             </View>
           </View>
-
-          <View
-            style={{
-              alignItems: "center",
-            }}
-          >
-            <TouchableOpacity style={styles.button}>
-              <View style={{ display: "flex", flexDirection: "row", gap: 4 }}>
-                <View
-                  style={{
-                    width: 16,
-                    height: 16,
-                    marginTop: 3,
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    borderRadius: 99,
-                    backgroundColor: "#EAAA08",
-                    gap: 4,
-                  }}
-                >
-                  <MaterialCommunityIcons
-                    name="star-outline"
-                    size={16}
-                    color="white"
-                  />
+          <View style={{}}>
+            <View
+              style={{
+                alignItems: "center",
+                marginBottom: 10,
+              }}
+            >
+              <TouchableOpacity style={styles.button}>
+                <View style={{ display: "flex", flexDirection: "row", gap: 4 }}>
+                  <View
+                    style={{
+                      width: 16,
+                      height: 16,
+                      marginTop: 3,
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      borderRadius: 99,
+                      backgroundColor: "#EAAA08",
+                      gap: 4,
+                    }}
+                  >
+                    <MaterialCommunityIcons
+                      name="star-outline"
+                      size={16}
+                      color="white"
+                    />
+                  </View>
+                  <View>
+                    <Text style={styles.buttonText}>Send a Recognition </Text>
+                  </View>
                 </View>
-                <View>
-                  <Text style={styles.buttonText}>Send a Recognition </Text>
-                </View>
-              </View>
-            </TouchableOpacity>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </View>
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
     elevation: 2,
     borderWidth: 1,
     borderColor: "#299647",
-    marginTop: 8,
+    marginTop: -30,
     marginLeft: 11,
   },
 });
