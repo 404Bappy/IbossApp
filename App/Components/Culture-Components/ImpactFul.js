@@ -30,7 +30,7 @@ export default function ImpactFul() {
                 marginLeft: 140,
                 fontSize: 16,
                 fontWeight: "500",
-                marginTop:10
+                marginTop: 10,
               }}
             >
               Impactful Appreciate
