@@ -17,53 +17,35 @@ export default function ImpactFul() {
           marginTop: 10,
         }}
       >
-        <View>
+        <View style={{ justifyContent: "center" }}>
           <View
             style={{
-              
-              height: 225,
+              height: 227,
             }}
           >
-            <OvalShape/>
-          </View>
-        </View>
-
-        <View style={styles.employee}>
-          <View style={styles.ic}>
-            <View
+            <OvalShape />
+            <Text
               style={{
-                width: 48,
-                height: 48,
-                justifyContent: "center",
                 alignItems: "center",
-                borderRadius: 99,
-                backgroundColor: "#",
+                marginLeft: 140,
+                fontSize: 16,
+                fontWeight: "500",
+                marginTop:10
               }}
             >
-              <View>
-                <FontAwesome5 name="user-friends" size={24} color="gray" />
-              </View>
-            </View>
-          </View>
-          <View style={{ display: "flex", flexDirection: "row", gap: -120 }}>
-            <View style={styles.txtContainer}>
-              <Text style={{ fontWeight: "500" }}>Appreciation </Text>
+              Impactful Appreciate
+            </Text>
+            <View style={{ alignItems: "center", alignContent: "center" }}>
               <Text
-                style={{
-                  marginTop: 5,
-                  fontWeight: "400",
-                  color: "#667085",
-                  width: 233,
-                  height: 16,
-                }}
+                style={{ textAlign: "center", color: "#667085", marginTop: 10 }}
               >
-                Gratitude: Recognitions & Points
+                Make a messages meaningful & measurable, recognition in fuels
+                performance and provides valuable
               </Text>
             </View>
           </View>
-        </View>
-        <View style={styles.Icon}>
-          <MaterialIcons name="keyboard-arrow-right" size={24} color="gray" />
+
+          <View style={{ alignItems: "center" }}></View>
         </View>
       </View>
     </View>
@@ -84,17 +66,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 99,
   },
-  employee: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-start",
-    marginBottom: 20,
-    marginLeft: 20,
-    marginTop: 20,
-  },
-  txtContainer: {
-    marginLeft: 16,
-  },
+
   Icon: {
     height: 24,
     width: 24,
@@ -102,17 +74,4 @@ const styles = StyleSheet.create({
     marginTop: 30,
     position: "fixed",
   },
-  badge: {
-    right: 91,
-    top: 0,
-    backgroundColor: "#D92D20",
-    padding: 0,
-    paddingHorizontal: 4,
-    borderRadius: 100,
-    marginLeft: 100,
-  },
-  text: {
-    color: "white",
-  },
-  oval: {},
 });
