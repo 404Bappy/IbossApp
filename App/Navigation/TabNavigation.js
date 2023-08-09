@@ -8,9 +8,8 @@ import { SimpleLineIcons } from "@expo/vector-icons";
 
 import Home from "../Screen/Home";
 import Application from "../Screen/Application";
-import Approval from "../Screen/Approval";
-import Features from "../Screen/Culture";
 import Culture from "../Screen/Culture";
+import PeerAppreciate from "../Screen/PeerAppreciate";
 
 export default function TabNavigation() {
   const Tab = createBottomTabNavigator();
@@ -45,10 +44,10 @@ export default function TabNavigation() {
         }}
       />
       <Tab.Screen
-        name="Approval"
-        component={Approval}
+        name="Peerappreciate"
+        component={PeerAppreciate}
         options={{
-          tabBarLabel: "Approval",
+          tabBarLabel: "Peerappreciate",
           tabBarIcon: ({ color, size }) => (
             <FontAwesome5 name="users" color={color} size={size} />
           ),
