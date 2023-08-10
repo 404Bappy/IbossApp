@@ -1,10 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import Application from "../../../Screen/Application";
+import Employee from "./Employee";
+import ThankYou from "./ThankYou";
 
-export default function Appreciate() {
+const Tab = createMaterialTopTabNavigator();
+
+const Appreciate = () => {
   return (
-    <View>
-      <Text>Appreciate</Text>
-    </View>
-  )
-}
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Application" component={Application} />
+        <Tab.Screen name="Employee" component={Employee} />
+        <Tab.Screen name="ThankYou" component={ThankYou} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default Appreciate;
